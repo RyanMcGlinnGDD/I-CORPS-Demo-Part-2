@@ -1,0 +1,181 @@
+
+{
+    "caseName": "Autonomous Infraction",
+    "initialScene": 0,
+    "failImage": "content/scene/carfacility2bw.jpg",
+    "titleLayerBackground": "carfacility.jpg",
+    "caseTime": 15,
+    "author": "Written and developed by Ryan McGlinn and Noah Phillips",
+    "scenes":[
+        {
+            "name": "Maintenance Terminal",
+            "description": "A high tech facility where the Future*Tech transportation fleet is maintained. While much is fully automated, technicians oversee various sectors of the terminal.",
+            "image": "carfacility.jpg",
+            "board": "01_terminal",
+            "visible": 1,
+            "focusTarget": 0
+        },
+        {
+            "name": "Derelict Factory",
+            "description": "One of many abandoned factories located in the outskirts of the city. Records indicate that some of Gerard's vehicles made frequent visits to this location.",
+            "image": "factoryExterior.jpg",
+            "board": "02_factory",
+            "visible": 0,
+            "focusTarget": 0
+        }
+    ],
+    "mysteries":[
+        {
+            "name": "Esposito's Drug Operation",
+            "description": "We need to uncover just how Esposito is moving and distributing goods before any action can be taken against him.",
+            "visible": false,
+            "solved": false,
+            "image": "content/evidence/mystery/drugs.png",
+            "type": "Mystery",
+            "indexSelf": 0,
+            "statement1": "Who was the key to this operation?",
+            "statement2": "By what means was this operation possible?",
+            "statement3": "What was the payout of the operation?",
+            "components":[
+                {
+                    "part1": 1,
+                    "part2": 0,
+                    "part3": 0,
+                    "result":[
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "mystery/00_drug.json"
+                        },
+                        {
+                            "type": "lockMystery",
+                            "target": 0
+                        },
+                        {
+                            "type": "addTime",
+                            "target": 5
+                        },
+                        {
+                            "type": "unlockClue",
+                            "target": {
+                                "array": 2,
+                                "clue": 1
+                            }
+                        }
+                    ]
+                }
+            ],
+            "records":[]
+        },
+        {
+            "name": "Murder of Gerard Little",
+            "description": "Little was found dead as the result of foul play in unusual circumstances.",
+            "visible": false,
+            "solved": false,
+            "image": "content/evidence/mystery/outline.png",
+            "type": "Mystery",
+            "indexSelf": 1,
+            "statement1": "Who was the murderer?",
+            "statement2": "By what means was the murder committed?",
+            "statement3": "Why would someone want Gerard Little dead?",
+            "components":[
+                {
+                    "part1": 0,
+                    "part2": 1,
+                    "part3": 1,
+                    "result":[
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "mystery/01_murder.json"
+                        },
+                        {
+                            "type": "lockMystery",
+                            "target": 1
+                        },
+                        {
+                            "type": "endGame",
+                            "target": "content/scene/carfacility.jpg"
+                        }
+                    ]
+                }
+            ],
+            "records":[]
+        }
+    ],
+    "revelations":[
+        [
+            {
+                "name": "Adrian Esposito",
+                "description": "Suspected crime lord who has managed to stay clean on paper for too long now. This is the best chance we have of nabbing him so far.",
+                "image": "content/evidence/character/esposito.png",
+                "visible": false,
+                "type": "Person of Interest",
+                "indexType": 1,
+                "indexSelf": 0
+            },
+            {
+                "name": "Gerard Little",
+                "description": "An autonomous vehicle technician under the employ of the Future*Tech company. He was Freddie Silva's point of contact in the events leading up to the previous case.",
+                "image": "content/evidence/character/gerard.png",
+                "visible": false,
+                "type": "Person of Interest",
+                "indexType": 1,
+                "indexSelf": 1
+            }
+        ],
+        [
+            {
+                "name": "Drug Trafficking",
+                "description": "The Future*Tech autonomous vehicle network was used to transport drugs secretly through the city.",
+                "image": "content/evidence/item/drugtrafficking.png",
+                "visible": false,
+                "type": "Method",
+                "indexType": 2,
+                "indexSelf": 0
+            },
+            {
+                "name": "Murder Weapon",
+                "description": "This wrench was used to beat Gerard Little to within inches of death. The injuries sustained in this attack resulted in fatal blood loss.",
+                "image": "content/evidence/item/murder.png",
+                "visible": false,
+                "type": "Method",
+                "indexType": 2,
+                "indexSelf": 1
+            }
+        ],
+        [
+            {
+                "name": "Cryptocurrency Exchange",
+                "description": "A tremendous amount of digital money flowed into the Esposito syndicate's coffers through their dealings with other criminal organizations.",
+                "image": "content/evidence/item/cryptocurrency.png",
+                "visible": false,
+                "type": "Motive",
+                "indexType": 3,
+                "indexSelf": 0
+            },
+            {
+                "name": "Skimming",
+                "description": "Gerard Little was manipulating records and tampering with shipments to steal both money and product from Esposito. Esposito would not appreciate being double-crossed if he found out.",
+                "image": "content/evidence/mystery/grab.png",
+                "visible": false,
+                "type": "Motive",
+                "indexType": 3,
+                "indexSelf": 1
+            }
+        ]
+        
+    ]
+}

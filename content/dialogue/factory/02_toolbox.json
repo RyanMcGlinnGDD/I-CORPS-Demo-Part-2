@@ -1,0 +1,69 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "factory.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/wrench.png"
+        },
+        {
+            "prop": "content/evidence/item/toolbox.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "This place is a huge mess.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 1
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "All sorts of junk, tools, and scrap got left behind when the factory was abandoned.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "We'll have to pick through everything carefully in case anything important has been mixed in.",
+            "action": [
+            ]
+        }
+	]
+}

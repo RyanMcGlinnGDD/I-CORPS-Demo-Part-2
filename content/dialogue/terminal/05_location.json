@@ -1,0 +1,73 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "workstation.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/location.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Using the diagnostic computer, I've been able to access the car's complete location record.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "There's a lot of data to parse through though...",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "We'll be able to narrow down what locations are important to the investigation if we find some sort of frame of reference.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I'll keep that in mind.",
+            "action": [
+            ]
+        }
+	]
+}

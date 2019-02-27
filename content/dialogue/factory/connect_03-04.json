@@ -1,0 +1,94 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "factory.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/wrench.png"
+        },
+        {
+            "prop": "content/evidence/item/security.png"
+        },
+        {
+            "prop": "content/evidence/item/murder.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "I just ran fingerprint records on the wrench.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "It's a match.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "This is it, this is what ties Esposito to the scene.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "He beat Gerard Little mercilessly and left him to bleed.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 2
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "We just need to tie a motive to this and Esposito is trapped.",
+            "action": [
+            ]
+        }
+	]
+}

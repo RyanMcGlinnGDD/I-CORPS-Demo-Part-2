@@ -1,0 +1,115 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "workstation.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/diagnostic.png"
+        },
+        {
+            "prop": "content/evidence/item/tamperedCars.png"
+        },
+        {
+            "prop": "content/evidence/item/drive.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I've taken the time to parse through the usage logs on this computer.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "See anything interesting?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "It seems that a number of vehicles were routinely called in for maintenance despite not showing any need for it. It's kind of suspicious.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "There's plenty of space here at the workstation, we might as well call them in to take a look at them.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "One more thing, there's a non-standard hard drive attached to the computer.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 2
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "What kinds of files are on it?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I honestly couldn't tell you, it's heavily encrypted. It can't be accessed the way things are now.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Let's keep this in mind, there could be important files on that drive.",
+            "action": [
+            ]
+        }
+	]
+}

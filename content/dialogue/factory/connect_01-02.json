@@ -1,0 +1,80 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "factory.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/wrench.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Hey, get over here! Look what I found.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "What is it? What did you find?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Check out this bloody wrench.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 0
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "It matches the blunt force trauma description in the autopsy.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Let's give it a closer look.",
+            "action": [
+            ]
+        }
+	]
+}

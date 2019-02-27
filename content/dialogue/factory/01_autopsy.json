@@ -1,0 +1,73 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "factory.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/folder1.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Here's the Gerard Little autopsy from earlier.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "The biggest takeaway we get can get from this is that he was killed with blunt force trauma.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "With this much blood everywhere, we should keep an eye out for something that could have been used as a weapon that matches that description.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Exactly.",
+            "action": [
+            ]
+        }
+	]
+}

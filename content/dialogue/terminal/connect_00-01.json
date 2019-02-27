@@ -1,0 +1,80 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "workstation.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/diagnostic.png"
+        },
+        {
+            "prop": "content/evidence/item/location.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Looks like that diagnostic you ran just wrapped up, what kind of data did it yield?",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "A whole bunch of stuff, but I think the most relevant data for the investigation is this.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "It's a record of all of the places this car has been.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Alright, let's take a note of that.",
+            "action": [
+            ]
+        }
+	]
+}

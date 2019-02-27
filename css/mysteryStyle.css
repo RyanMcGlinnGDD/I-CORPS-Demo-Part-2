@@ -1,0 +1,241 @@
+#mysteryLayer{
+    -webkit-transition: opacity .2s linear;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.85);
+    font-family: "Lato", Helvetica, sans-serif;
+}
+#mysteryReturnButton{
+    position: absolute;
+    font-size: 2.5vmin;
+    top: 0;
+    left: 0;
+    color: black;
+    margin-left: 1vmin;
+    margin-top: 1vmin;
+    padding: 1vmin;
+    background-color: white;
+    border-radius: .25vh;
+}
+#mysteryReturnButton:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+#mysteryTitle{
+    position: absolute;
+    width: 70%;
+    bottom: 80vh;
+    left: 15%;
+    color: white;
+    font-size: 5vmin;
+}
+#mysterySubtitle{
+    position: absolute;
+    width: 70%;
+    top: 20vh;
+    left: 15%;
+    color: white;
+    font-size: 2vmin;
+    
+}
+#mysteryScroller{
+    position: absolute;
+    height: 60vh;
+    width: 35%;
+    top: 25vh;
+    right: 50%;
+    
+    outline: .1vh solid white;
+}
+#mysteryScrollerOverflow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    height: 60vh;
+    width: 100%;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    box-sizing: border-box;
+    
+}
+#mysteryScrollerPlaceholder{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    font-size: 2vmin;
+    color: white;
+}
+.mysteryScrollerElement{
+    cursor: pointer;
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+    margin-bottom: 1vh;
+    border-radius: .25vh;
+    position: relative;
+    overflow: hidden;
+}
+.mysteryScrollerElement img, #mysteryInfoProfile img, .mysteryAffirmProfile img{
+    height: 11vh;
+    width: 11vh;
+    margin: .5vh;
+    background-color: black;
+    object-fit: contain;
+    pointer-events: none;
+}
+.mysteryScrollerElement div, #mysteryInfoProfile div, .mysteryAffirmProfile div{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 12vh;
+    transform: translate(0, -50%);
+}
+.mysteryScrollerElement p, #mysteryInfoProfile p, .mysteryAffirmProfile p{
+    text-align: center;
+    width: 100%;
+}
+.mysteryScrollerElementUpper, #mysteryInfoProfileUpper, .mysteryAffirmUpper{
+    font-size: 3vmin;
+}
+.mysteryScrollerElementLower, #mysteryInfoProfileLower, .mysteryAffirmLower{
+    font-style: italic;
+    font-size: 1.5vmin;
+}
+.mysteryScrollerElement:hover{
+    background-color: gray;
+    color: white;
+}
+
+#mysteryInfo{
+    position: absolute;
+    height: 60vh;
+    width: 35%;
+    top: 25vh;
+    left: 50%;
+    
+    outline: .1vh solid white;
+    
+    padding-left: 1vh;
+    padding-right: 1vh;
+    box-sizing: border-box;
+    
+}
+#mysteryInfoProfile{
+    width: 100%;
+    margin-top: 1vh;
+    height: 12vh;
+    margin-bottom: 1vh;
+    border-radius: .25vh;
+    position: relative;
+    outline: .1vh solid white;
+    overflow: hidden;
+    color: white;
+}
+
+#mysteryInfoDescription{
+    width: 100%;
+    height: 37vh;
+    color: white;
+    font-size: 2vmin;
+    overflow-y: auto;
+}
+#mysteryInfoButton{
+    background-color: white;
+    color: black;
+    height: 8vh;
+    width: 100%;
+    cursor: pointer;
+}
+#mysteryInfoButton p{
+    text-align: center;
+    line-height: 8vh;
+    font-size: 4vmin;
+    overflow: hidden;
+    border-radius: .25vh;
+}
+#mysteryInfoButton:hover{
+    background-color: gray;
+    color: white;
+}
+
+#mysteryAffirm{
+    position: absolute;
+    width: 70%;
+    top: 25vh;
+    left: 15%;
+    color: white;
+}
+.mysteryAffirmDivider{
+    width: 100%;
+    height: 14vh;
+    outline: .1vh solid white;
+    position: relative;
+    overflow: hidden;
+}
+#mysteryAffirmStatement1, #mysteryAffirmStatement2, #mysteryAffirmStatement3{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 2vmin;
+    box-sizing: border-box;
+    padding: 0 2vh;
+}
+.mysteryAffirmProfileContainer{
+    width: 50%;
+    height: 14vh;
+    float: right;
+    box-sizing: border-box;
+    padding-top: 1vh;
+    padding-right: 1vh;
+}
+.mysteryAffirmProfile{
+    width: 100%;
+    height: 12vh;
+    position: relative;
+    outline: .1vh solid white;
+    overflow: hidden;
+}
+#mysteryAffirmConfirmation{
+    margin-top: 1vh;
+    
+    font-size: 2.5vmin;
+}
+#mysteryAffirmButtonContainer{
+    width: 100%;
+    height: 8vhvh;
+    margin-top: 1vh;
+}
+#mysteryAffirmNo{
+    float: left;
+}
+#mysteryAffirmYes{
+    float: right;
+}
+#mysteryAffirmYes, #mysteryAffirmNo{
+    width: 49%;
+    height: 8vh;
+    cursor: pointer;
+    background-color: white;
+    border-radius: .25vh;
+    text-align: center;
+    overflow: hidden;
+    color: black;
+}
+#mysteryAffirmYes p, #mysteryAffirmNo p{
+    line-height: 8vh;
+    font-size: 4vh;
+}
+#mysteryAffirmYes:hover, #mysteryAffirmNo:hover{
+    background-color: gray;
+    color: white;
+}

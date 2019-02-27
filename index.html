@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ICORPS</title>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/dialogueStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/evidenceStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/selectStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/boardUIStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/titleLayerStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/mysteryStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/resultStyle.css">
+    <!-- this needs to be the last declared stylesheet due to several universally used class styles -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    
+    <link rel="icon" href="content/ui/favicon.png">
+    
+</head>
+<body>
+	<canvas>The browser you are using does not support modern web functionality</canvas>
+    <div id="gameData"></div>
+    
+    <div id="titleLayer" class="hiddenElement">
+        <img id="titleLayerBackground" />
+        <div id="titleLayerWrapper">
+            <img id="titleLayerTitle" src="content/ui/logo.png">
+            <p id="titleLayerSubtitle"></p>
+            <div id="titleLayerStartButton" class="titleLayerButton"><p>Start</p></div>
+            <div id="titleLayerCreditsButton" class="titleLayerButton"><p>Credits</p></div>
+        </div>
+    </div>
+    <div id="creditLayer" class="hiddenElement">
+        <img id="creditLayerBackground" />
+        <div id="creditLayerWrapper">
+            <p id="creditLayerTitleDeveloper" class="title">Programmed and developed by</p>
+            <p id="creditLayerDirect">Ryan McGlinn</p>
+            <p id="creditLayerTitleScenario" class="title">Scenario</p>
+            <p id="creditLayerScenario"></p>
+            <p id="creditLayerScenarioCredit"></p>
+            <div id="creditLayerReturnButton" class="titleLayerButton"><p>Return</p></div>
+        </div>
+    </div>
+    <div id="selectLayer" class="hiddenElement">
+        <img id="selectImage" src="">
+        <div id="selectScroller">
+            <div id="selectScrollerOverflow">
+                
+            </div>
+        </div>
+        <div id="selectContent">
+            <svg id="selectBoardPreviewLines"></svg>
+            <div id="selectBoardPreview"></div>
+            <div id="selectDescriptionFrame">
+                <div id="selectTitleFrame">
+                    <p id="selectTitle"></p>
+                </div>
+                <div id="selectTextFrame">
+                    <div id="selectTextBackdrop"></div>
+                    <div id="selectTextOverflow">
+                        <p id="selectText"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="selectButtonFrame">
+                <div id="selectButtonGraphicContainer">
+                    <div id="selectButtonGraphicTop" class="arrowTop"></div>
+                    <div id="selectButtonGraphicBottom" class="arrowBottom"></div>
+                </div>
+                <p id="selectButtonLabel">Go</p>
+            </div>
+        </div>
+        <div id="selectTimeRemainingFrame">
+            <p id="selectTimeRemainingText">00</p>
+            <p id="selectTimeRemainingLabel">Hours<br/>remaining</p>
+        </div>
+    </div>
+    <div id="boardUILayer" class="hiddenElement">
+        <div id="visualFrame">
+            <div id="visualFrameInner"></div>
+        </div>
+        <div id="boardTitleFrame">
+            <div id="boardTitleInnerFrame">
+                <p id="boardTitleText"></p>
+                <div id="boardTitleDivider"></div>
+                <p id="boardTitleSelector">⇄</p>
+            </div>
+            <div id="boardTitleFrameTopLeft"></div>
+            <div id="boardTitleFrameTopRight"></div>
+            <div id="boardTitleFrameBottomLeft"></div>
+            <div id="boardTitleFrameBottomRight"></div>
+        </div>
+        <div id="timeRemainingFrame">
+            <p id="timeRemainingText">00</p>
+            <p id="timeRemainingLabel">Hours<br/>remaining</p>
+        </div>
+        <div id="solveFrame">
+            <div id="revelationFrame">
+                <p>Critical Clues</p>
+            </div>
+            <div id="mysteryFrame">
+                <p>Crack the Case ➤</p>
+            </div>
+        </div>
+    </div>
+    <div id="evidenceLayer" class="hiddenElement">
+        <div id="evidenceFrame">
+                <div id="photoFrame">
+                    <div id="photoBorder">
+                        <div id="photoImageBorder">
+                            <img id="photoImage">
+                        </div>
+                        <div id="photoFrameTitleFrame" class="hiddenElement">
+                            <p id="photoFrameTitle"></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="descriptionFrame">
+                    <div id="descriptionFramePaper">
+                        <p id="descriptionFrameTitle">Description</p>
+                        <p id="descriptionFrameContent"></p>
+                    </div>
+                </div>
+                <div id="analysisFrame">
+                    <div id="analysisFramePaper">
+                        <p id="analysisFrameTitle">Analysis</p>
+                        <p id="analysisFrameContent"></p>
+                    </div>
+                    <div id="analysisButton" class="hiddenElement">
+                        <p id="analysisButtonText">Conduct<br />Analysis</p>
+                        <img id="analysisButtonGraphic" src="content/ui/scribbledCircle.png">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="dialogueLayer" class="hiddenElement">
+            <div id="dialogueFrame" class="hiddenLayer">
+                <div id="dialogueSpeakerFrame">
+                    <p id="dialogueSpeaker"></p>
+                </div>
+                <div id="dialogueTextFrame">
+                    <div id="dialogueTextBackdrop"></div>
+                    <p id="dialogueText"></p>
+                </div>
+            </div>
+            <p id="dialogueProgressIndicator" class="blink_me">Click anywhere to advance</p>
+        </div>
+    <div id="mysteryLayer" class="hiddenLayer">
+        <div id="mysteryReturnButton">
+            <p>← Return to Investigation</p>
+        </div>
+        <p id="mysteryTitle"></p>
+        <p id="mysterySubtitle"></p>
+        <div id="mysteryScroller">
+            <div id="mysteryScrollerOverflow"></div>
+        </div>
+        <div id="mysteryInfo">
+            <div id="mysteryInfoProfile">
+                <img id="mysteryInfoProfileImage">
+                <div>
+                    <p id="mysteryInfoProfileUpper">Test Example</p>
+                    <p id="mysteryInfoProfileLower">Identifier</p>
+                </div>
+            </div>
+            <p id="mysteryInfoDescription"></p>
+            <div id="mysteryInfoButton" class="hiddenElement">
+                <p>Select</p>
+            </div>
+        </div>
+        <div id="mysteryAffirm" class="hiddenElement">
+            <div class="mysteryAffirmDivider">
+                <p id="mysteryAffirmStatement1"></p>
+                <div class="mysteryAffirmProfileContainer">
+                    <div class="mysteryAffirmProfile">
+                        <img id="mysteryAffirmImage1">
+                        <div>
+                            <p id="mysteryAffirmUpper1" class="mysteryAffirmUpper"></p>
+                            <p id="mysteryAffirmLower1" class="mysteryAffirmLower"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mysteryAffirmDivider">
+                <p id="mysteryAffirmStatement2"></p>
+                <div class="mysteryAffirmProfileContainer">
+                    <div class="mysteryAffirmProfile">
+                        <img id="mysteryAffirmImage2">
+                        <div>
+                            <p id="mysteryAffirmUpper2" class="mysteryAffirmUpper"></p>
+                            <p id="mysteryAffirmLower2" class="mysteryAffirmLower"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mysteryAffirmDivider">
+                <p id="mysteryAffirmStatement3"></p>
+                <div class="mysteryAffirmProfileContainer">
+                    <div class="mysteryAffirmProfile">
+                        <img id="mysteryAffirmImage3">
+                        <div>
+                            <p id="mysteryAffirmUpper3" class="mysteryAffirmUpper"></p>
+                            <p id="mysteryAffirmLower3" class="mysteryAffirmLower"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="mysteryAffirmConfirmation">Do you believe this conclusion to be correct?</p>
+            <div id="mysteryAffirmButtonContainer">
+                <div id="mysteryAffirmNo">
+                    <p>No</p>
+                </div>
+                <div id="mysteryAffirmYes">
+                    <p>Yes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resultLayer" class="hiddenLayer">
+        <img id="resultBackground" />
+        <div id="resultContent" class="hiddenLayer">
+            <div id="resultWrapper">
+                <div id="resultScroller">
+                    
+                </div>
+                <div id="resultButton"><p>Return to Main Menu</p></div>
+            </div>
+        </div>
+        <p id="resultTitle"></p>
+        <p id="resultSubtitle"></p>
+    </div>
+    <div id="notificationLayer" class="hiddenLayer">
+            <div id="notificationBlinder"></div>
+            <div id="notificationAnchor">
+                <p id="notificationText"></p>
+                <p>Click anywhere to continue</p>
+            </div>
+        </div>
+    
+    
+    
+    <div id="fadeBlinder" class="hiddenLayer"></div>
+    <script src="bundle.js"></script>
+</body>
+</html>

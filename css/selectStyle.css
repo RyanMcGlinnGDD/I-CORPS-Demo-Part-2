@@ -1,0 +1,208 @@
+#selectLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#selectScroller{
+    position: absolute;
+    height: 100vh;
+    width: 25%;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(0,0,0,.7)
+}
+#selectScrollerOverflow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    height: 100vh;
+    width: 100%;
+}
+.selectScrollerElement{
+    width: 90%;
+    margin: 5% 5%;
+    height: 15vh;
+    background-color: white;
+    color: black;
+    
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size: 3vmin;
+    cursor: pointer;
+}
+.selectScrollerElement p{
+    margin: 0 5%;
+}
+.selectScrollerElement:hover{
+    background-color: gray;
+    color: white;
+}
+.selected{
+    background-color: rgba(0,0,0,.85);
+    color: white;
+}
+.newTag{
+    position: absolute;
+    top: .5vh;
+    right: 0;
+    color: red;
+}
+
+#selectContent{
+    position: absolute;
+    height: 100vh;
+    width: 75%;
+    top: 0;
+    right: 0;
+}
+#selectImage{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#selectBoardPreview, #selectBoardPreviewLines{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+.selectBoardPreviewOutline{
+    stroke: white;
+    stroke-width: .75vh;
+}
+.selectBoardPreviewLine{
+    stroke: red;
+    stroke-width: .25vh;
+}
+.selectBoardPreviewNode{
+    position: absolute;
+    width: 5vh;
+    height: 6vh;
+    background-color: white;
+    outline: .25vh solid gray;
+    transform: translate(-50%, -50%);
+}
+.selectBoardPreviewNodeImage{
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    top: .5vh;
+    left: .5vh;
+    background-color: black;
+    object-fit: contain;
+}
+
+#selectDescriptionFrame{
+    position: absolute;
+    bottom: 0;
+    left: 2.5%;
+    height: 25vh;
+    width: 75%;
+    color: white;
+    font-family: "Arial", Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+#selectTitleFrame{
+    position: absolute;
+    top: 0;
+    height: 5vh;
+    width: 100%;
+}
+#selectTitle{
+    position: absolute;
+    top: 0;
+    height: 4vh;
+    font-size: 3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-top: 1vh;
+    background-color: rgba(0,0,0,.85);
+    border-radius: 5px 5px 0px 0px;
+    white-space: nowrap;
+}
+#selectTextFrame{
+    height: 20vh;
+    position: relative;
+    margin-top: 5vh;
+}
+#selectTextBackdrop{
+    background-color: rgba(0,0,0,.7);
+    height: inherit;
+    border-radius: 0px 5px 0px 0px;
+}
+#selectTextOverflow{
+    height: 18vh;
+    margin: 1vh;
+    font-size: 2.8vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+#selectButtonFrame{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20vh;
+    width: 20%;
+    color: white;
+    font-family: "Arial", Helvetica, sans-serif;
+    
+    background-color: rgba(0,0,0,.7);
+    border-radius: 5px 0px 0px 0px;
+    cursor: pointer;
+    
+    overflow: hidden;
+}
+#selectButtonGraphicTop{
+    position: absolute;
+    top: 2vh;
+    left: 10%;
+    width: 80%;
+    height: 8vh;
+    background: linear-gradient(to right top, white 50%, transparent 50%);
+}
+#selectButtonGraphicBottom{
+    position: absolute;
+    top: 9.95vh;
+    left: 10%;
+    width: 80%;
+    height: 8vh;
+    background: linear-gradient(to right bottom, white 50%, transparent 50%);
+}
+#selectButtonLabel{
+    position: absolute;
+    top: 0;
+    line-height: 20vh;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 3vh;
+    display: inline-block;
+    margin-left: 30%;
+}
+
+#selectButtonFrame:hover .arrowTop {
+    background: linear-gradient(to right top, gray 50%, transparent 50%);
+}
+#selectButtonFrame:hover .arrowBottom {
+    background: linear-gradient(to right bottom, gray 50%, transparent 50%);
+}
+#selectButtonFrame:hover p{
+    color: white;
+}

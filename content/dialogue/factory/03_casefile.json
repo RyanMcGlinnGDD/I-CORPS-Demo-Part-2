@@ -1,0 +1,94 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "factory.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/folder2.png"
+        },
+        {
+            "prop": "content/evidence/item/security.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Here's Esposito's casefile.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "While it has entries from all sorts of other cases and looks pretty substantial, little of it was actionable at the time of investigation.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "It looks like he's pretty good at covering his tracks and having other people take falls for him.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Anything in regards to forensic data? If we could tie him to this crime scene, that would be big.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "It looks like the file contains his fingerprint data.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Let's see how far we can get with just that.",
+            "action": [
+            ]
+        }
+	]
+}

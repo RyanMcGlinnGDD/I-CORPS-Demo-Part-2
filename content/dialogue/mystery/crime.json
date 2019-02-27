@@ -1,0 +1,237 @@
+{
+    "location": "SFPD Precinct",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        },
+        {
+            "name": "Viola"
+        },
+        {
+            "name": "Freddie"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "policedepartment.jpg"
+        },
+        {
+            "backdrop": "interrogationroom.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/lab.png"
+        },
+        {
+            "prop": "content/evidence/character/esposito.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "As it happens, it actually looks like Freddie is telling the truth this time.",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": 20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 0,
+                    "active": true,
+                    "position": -50
+                },
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "We used the results from the ICORPS system to trace things back and everything matches up.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "It seems that his debt is controlled by a crime lord by the name of Adrian Esposito.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "We've been aware of Esposito's activities for a while now, but he's been good at covering his tracks and we were never able to build a substantial case against him.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Apparently he does everything by proxy, and poor suckers like Freddie end up taking the fall for him.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "If we play our cards right, Freddie could potentially be a key witness in a case against him.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "It sounds like we an even bigger case is right on our doorstep.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "No doubt, but some lingering questions remain.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "What do you mean by that exactly?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Well, we had samples of the confiscated drugs examined. Here are the lab results, take a look.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 0
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Oh.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Oh indeed.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "I suppose Freddie deserves to know.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "transition",
+            "scene": 1,
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": "Interrogation Room"
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "Powdered sugar?!",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": -60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 3,
+                    "expression": 0,
+                    "active": true,
+                    "position": 50
+                },
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "You're kidding me.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "Why would Esposito make me deal powdered sugar?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "We don't have an answer for that, but there's definitely more going on here than meets the eye.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I guess this just means we have another case on our hands.",
+            "action": [
+            ]
+        }
+	]
+}

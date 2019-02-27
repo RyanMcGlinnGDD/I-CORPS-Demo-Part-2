@@ -1,0 +1,203 @@
+/*general styles to be applied to every page*/
+* {
+	margin:0px; 
+	padding:0px;
+    user-select:none;
+}
+/*Fix for IE*/
+img {
+	border-width: 0;
+}
+body {
+	width: 100%;
+    height: 100%;
+	margin: 0;
+	padding: 0;
+    
+    background-color: black;
+    overflow: hidden;
+}
+
+canvas {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+#debugLine{
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    position: absolute;
+    top:5px;
+    right: 50%;
+}
+#debugLine2{
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    position: absolute;
+    bottom:5px;
+    right: 0px;
+}
+
+
+
+#fadeBlinder{
+    -webkit-transition: opacity .2s linear;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+}
+
+#boardLayer{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    pointer-events:none;
+}
+
+/*evidence menu stuff*/
+#evidenceMenu{
+    -webkit-transition: opacity .2s linear;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    color: white;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+#evidenceName{
+    font-weight: bold;
+    font-size: 4vmin;
+    width: 95%;
+    margin-left: 2.5%;
+}
+#evidenceImage{
+    margin-left: 2.5%;
+    width: 45%;
+}
+#evidenceDescription{
+    width: 95%;
+    margin-left: 2.5%;
+    font-size: 2vmin;
+}
+#evidenceAnalyzeButton{
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 1vmin;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3vmin;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    cursor: pointer;
+    
+    width: 95%;
+}
+#evidenceInsightFrame{
+    
+}
+#evidenceInsightHeader{
+    
+}
+#evidenceInsight{
+    font-size: 2vmin;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+#notificationLayer{
+    -webkit-transition: opacity .2s linear;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    color: white;
+    font-size: 16pt;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+#notificationBlinder{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    opacity: .5;
+}
+#notificationAnchor{
+    left: 0%;
+    top: 50%;
+    width: 50%;
+    
+    margin: 0 auto;
+    
+    text-align: center;
+    
+    position: relative;
+    transform: translateY(-50%);
+    
+    margin: 0 auto;
+    color: white;
+}
+#notificationText{
+    font-size: 20pt;
+}
+
+
+
+
+
+/*autonomous animation*/
+/*borrow from http://jsfiddle.net/umz8t/6490/*/
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+.hiddenLayer{
+    opacity: 0;
+    pointer-events: none;
+}
+.hiddenElement{
+    display: none;
+    opacity: 0;
+}
+#gameData{
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+/* Scrollbar experimentation */
+/* width */
+::-webkit-scrollbar {
+    width: 1vh;
+    box-shadow: inset 0 0 .25vh white; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 1vh;
+}

@@ -1,0 +1,90 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        },
+        {
+            "name": "Nole"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "workstation.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/cuff.png"
+        },
+        {
+            "prop": "content/evidence/item/ftphone.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Nole, can you tell us a little more about this identification cuff?",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Basically, each Future*Tech employee has one of these cuffs. I've got one too.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Proximity sensors within the cuff can be used to allow difference levels of access and security clearance.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Many other Future*Tech devices are compatible with the cuffs, and they can be used to quickly access personal profiles.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Each cuff is imprinted with the biometric data of it's wearer, so no two employees will have the same signature.",
+            "action": [
+            ]
+        }
+	]
+}

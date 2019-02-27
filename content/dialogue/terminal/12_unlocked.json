@@ -1,0 +1,136 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "workstation.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/drive.png"
+        },
+        {
+            "prop": "content/evidence/item/financial.png"
+        },
+        {
+            "prop": "content/evidence/item/cryptocurrency.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "A number of things stand out to me about the files in this drive.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "What have you got?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "For one, there's a very thorough record of incoming and outgoing emails. Take a look.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Huh, these are all to and from representatives of various crime families.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Interesting...",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Additionally, there's also a huge cache of digital crytocurrency stored in this drive.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 2
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "With values that fluctuate as much as they do, we can't accurately determine how much all this is worth right here right now.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I can however tell you that there is a lot of it.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "A very very great amount.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "This more than cements any doubts we might have about motive.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "There was a lot of money to be made in this racket.",
+            "action": [
+            ]
+        }
+	]
+}

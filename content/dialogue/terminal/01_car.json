@@ -1,0 +1,140 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "workstation.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/car.png"
+        },
+        {
+            "prop": "content/evidence/item/outline.png"
+        },
+        {
+            "prop": "content/evidence/item/diagnostic.png"
+        },
+        {
+            "prop": "content/evidence/character/gerard.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "This is that car that drove in on its own when we arrived.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I bet we could use the diagnostic computer to run a scan on it to find out what it's been up to.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 2
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Sounds like a plan, though first let's open the doors to take a look inside.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Good lord!",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 6,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 6,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "It's-!.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Gerard Little! He's dead!",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 3
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        }
+	]
+}

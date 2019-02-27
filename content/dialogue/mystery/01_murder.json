@@ -1,0 +1,532 @@
+{
+    "location": "Police Department",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        },
+        {
+            "name": "Viola"
+        },
+        {
+            "name": "Nole"
+        },
+        {
+            "name": "Esposito"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "policedepartment.jpg"
+        },
+        {
+            "backdrop": "street.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/character/esposito.png"
+        },
+        {
+            "prop": "content/evidence/item/drugtrafficking.png"
+        },
+        {
+            "prop": "content/evidence/item/murder.png"
+        },
+        {
+            "prop": "content/evidence/item/caronthestreet.png"
+        },
+        {
+            "prop": "content/evidence/item/crash.png"
+        },
+        {
+            "prop": "content/evidence/item/car.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "At this point, I believe we can conclusively explain the murder of Gerard Little.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": -60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 0,
+                    "active": true,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "It was Esposito.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 0
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "As we know, Esposito was running a large scale drug operation, and Gerard Little was one of potentially several corrupt technicians within the Future*Tech system.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "However, Gerard Little started getting a little too confident in his abilities and started skimming off the top of Esposito's profits.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Esposito found out, and naturally he was not pleased.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "He arranged to meet Gerard at one of his properties on the outskirts of town and proceeded to enact his revenge.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 2
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Using a wrench at the scene, he beat Gerard Little to within an inch of his life.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "It was Esposito's turn to be a little too confident however.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Rather than finishing the job, he decided to let his victim bleed out slowly for maximum pain and punishment.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "What he didn't count on however was that after he left, Gerard Little would use the last of his strength to drag himself to his Future*Tech car and order it to return to his workstation.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 5
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Even though he wasn't able to save himself, we were able to follow leads found by examining the car that led to this conclusion.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Good work team. Using your findings, we should be able to build a solid case against Esposito and put him away for good.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Wait a second. I'm getting a notification.",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 4,
+                    "active": true,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "What?! No!",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 4,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 4,
+                    "active": true,
+                    "position": -60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 6,
+                    "active": true,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Esposito pushed passed the guards and is making a break for it!",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 6,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 6,
+                    "active": true,
+                    "position": -60
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Quick! Get to the street! He probably has a getaway vehicle!",
+            "action": [
+            ]
+        },
+        {
+            "type": "transition",
+            "scene": 1,
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": "Streetside"
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 4,
+            "statement": "You punk cops were idots for thinking you could hold me down.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": -60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 4,
+                    "expression": 0,
+                    "active": true,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 4,
+            "statement": "I'm going on a permanent vacation, Europe sounds like it would be a nice place to retire.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 4,
+            "statement": "See yah, don't bother looking for me. Hahahaha.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "He's getting away! Do we have any cars at the ready?",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 4,
+                    "expression": 0,
+                    "active": false,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "No, he caught us at the worst time.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Wait, what's that?",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 3
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 4,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 4,
+                    "active": true,
+                    "position": -60
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "It's a bunch of Future*Tech cars!",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "They're moving fast! What are they doing?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "They're targeting Esposito's car! They're going to crash!",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 4,
+            "statement": "AAAAAAAAAAAAAAAAGH! What the hell is this?",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 4
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 6,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 6,
+                    "active": true,
+                    "position": -60
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "They stopped him!",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "What the heck is going on?",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 4,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 4,
+                    "active": true,
+                    "position": -60
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "Hello Detective Stone, Agent Pryce.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                },
+                {
+                    "type": "actorAction",
+                    "target": 3,
+                    "expression": 0,
+                    "active": true,
+                    "position": 50
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": -60
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "It's me, Nole Walker. It's a pleasure to finally meet you in person.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "What just happened?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "I was on my way over at Comissioner Viola's request for a case briefing and I saw Esposito trying to escape.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "I took control of several nearby empty cars from the network and used them to stop Esposito.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 3
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Perfect timing. You used the same method that Gerard Little was using to control cars against Esposito. That's poetic justice.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Thank you for your assistance, we're going to move in for the arrest.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "No, thank you. You exposed a plot that threatened the reputation of my company and the well-being of the city, and we're all the better for it.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I guess this means everything is over.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "We can finally take a deep breath, case closed.",
+            "action": [
+            ]
+        }
+	]
+}

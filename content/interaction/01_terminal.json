@@ -1,0 +1,589 @@
+{
+    "boardName": "Gerard Little's Workstation",
+    "openingActions":[
+        {
+            "type": "dialogue",
+            "target": "terminal/opener.json"
+        },
+        {
+            "type": "unlockMystery",
+            "target": 0
+        },
+        {
+            "type": "unlockEvidence",
+            "target": 0
+        },
+        {
+            "type": "unlockEvidence",
+            "target": 1
+        },
+        {
+            "type": "unlockClue",
+            "target": {
+                "array": 0,
+                "clue": 0
+            }
+        },
+        {
+            "type": "unlockClue",
+            "target": {
+                "array": 0,
+                "clue": 1
+            }
+        }
+    ],
+    "evidence":[
+        {
+            "num": 0,
+            "name": "Diagnostic Terminal",
+            "description": "Integrated into the facility, this is a computer equipped with functionality to observe and manage the many autonomous vehicles that come in for service.",
+            "insight": "In addition to the usual Future*Tech related files and installations, an encrypted drive is attached that contains additional data. Usage logs show that Gerard Little took direct command over several cars.",
+            "x": -60,
+            "y": -80,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/00_diagnostic.json"
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 2
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 7
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 1,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "terminal/connect_00-01.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 5
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/diagnostic.png"
+        },
+        {
+            "num": 1,
+            "name": "Autonomous Car",
+            "description": "A standard-model autonomous car that pulled into the workstation on its own shortly after the investigation team arrived.",
+            "insight": "A dead body was discovered laying haphazardly across the back seat. Detailed information regarding the car's whereabouts could probably be looked up if a diagnostic was conducted.",
+            "x": 30,
+            "y": -100,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/01_car.json"
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 3
+                },
+                {
+                    "type": "unlockMystery",
+                    "target": 1
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 0,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "terminal/connect_00-01.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 5
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/car.png"
+        },
+        {
+            "num": 2,
+            "name": "Encrypted Data Drive",
+            "description": "Attached to the diagnostic terminal, Gerard Little could easily store personal files with complete privacy.",
+            "insight": "The drive is configured such that a specific device containing Gerard Little's biometric data must be presented for authentication before the files within can be accessed.",
+            "x": -20,
+            "y": 30,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                0
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/02_encrypted.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 6,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "terminal/connect_02-06.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 12
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/drivelocked.png"
+        },
+        {
+            "num": 3,
+            "name": "Gerard Little's Body",
+            "description": "Found within the autonomous car at his workstation, the body is bloodied and beaten. Not to mention dead.",
+            "insight": "The body was searched for clues and an autopsy was conducted.",
+            "x": 80,
+            "y": -75,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                1
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/03_body.json"
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 4
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 6
+                }
+            ],
+            "interactions": [
+            ],
+            "image": "content/evidence/item/outline.png"
+        },
+        {
+            "num": 4,
+            "name": "Autopsy",
+            "description": "Gerard Little was cruelly beaten from head to toe and left to bleed. He survived for a short while but succumbed at some point after managing to crawl into the vehicle.",
+            "insight": "The state of the body in reference to the scene of discovery suggests that the murder happened at a different location.",
+            "x": 60,
+            "y": -25,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                3
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/04_autopsy.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 5,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "terminal/connect_04-05.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 13
+                        },
+                        {
+                            "type": "unlockBoard",
+                            "target": 1
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/folder1.png"
+        },
+        {
+            "num": 5,
+            "name": "Location Records",
+            "description": "Each autonomous vehicle in the Future*Tech fleet keeps a detailed record of its movements.",
+            "insight": "This data may be useful if you need to know where the car has been previously.",
+            "x": -15,
+            "y": -70,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                0,
+                1
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/05_location.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 4,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "terminal/connect_04-05.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 13
+                        },
+                        {
+                            "type": "unlockBoard",
+                            "target": 1
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/location.png"
+        },
+        {
+            "num": 6,
+            "name": "Identification Cuff",
+            "description": "Standard issue to all Future*Tech employees, they are used to give security clearance and track activities while on duty.",
+            "insight": "Each cuff contains a unique biometric signature imprinted by the wearer.",
+            "x": 95,
+            "y": 25,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                3
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/06_cuff.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 2,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "terminal/connect_02-06.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 12
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/cuff.png"
+        },
+        {
+            "num": 7,
+            "name": "Tampered Vehicles",
+            "description": "Commands were made to override the default behavior of a handful of vehicles under Gerard Little's jurisdiction. He could remotely control a small fleet of cars at will with minimal risk of detection.",
+            "insight": "Several of these vehicles had been set to roam the city and never take passengers. Items stored in the cars could be hidden in plain sight.",
+            "x": -80,
+            "y": -30,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                0
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/07_tampered.json"
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 8
+                }
+            ],
+            "interactions": [
+            ],
+            "image": "content/evidence/item/tamperedcars.png"
+        },
+        {
+            "num": 8,
+            "name": "Concealed Drug Shipments",
+            "description": "When recalled to the terminal, several of the tampered veicles were found to contain large stores of drugs.",
+            "insight": "In this great of a quantity, it is probable that plans were being made to distribute the drugs to other suppliers in addition to selling directly.",
+            "x": -70,
+            "y": 20,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                7
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/08_shipment.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 10,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "terminal/connect_08-10.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 11
+                        },
+                        {
+                            "type": "unlockClue",
+                            "target": {
+                                "array": 1,
+                                "clue": 0
+                            }
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/shipment.png"
+        },
+        {
+            "num": 9,
+            "name": "Cryptocurrency Cache",
+            "description": "A huge cache of various forms of digital currency indicate that this operation was extremely lucrative.",
+            "insight": "This is an important motive to consider for solving this case overall.",
+            "x": 70,
+            "y": 80,
+            "visible": false,
+            "analyzed": true,
+            "revelation": "Motive",
+            "connection": [],
+            "previous": [
+                12
+            ],
+            "insightOutcome":[
+            ],
+            "interactions": [
+            ],
+            "image": "content/evidence/item/cryptocurrency.png"
+        },
+        {
+            "num": 10,
+            "name": "Transaction Correspondence",
+            "description": "Gerard Little was in active correspondence with a number of known criminal collectives and organizations.",
+            "insight": "The nature of most of the communications was preparations for deliveries of unnamed shipments.",
+            "x": -30,
+            "y": 90,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                12
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/10_transaction.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 8,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "terminal/connect_08-10.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 11
+                        },
+                        {
+                            "type": "unlockClue",
+                            "target": {
+                                "array": 1,
+                                "clue": 0
+                            }
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/financial.png"
+        },
+        {
+            "num": 11,
+            "name": "Drug Trafficking",
+            "description": "The drug trafficking operation was made possible by exploiting the Future*Tech autnomous vehicle network and provided supply to many major players in the local criminal underworld.",
+            "insight": "This is an important method to consider for solving this case overall.",
+            "x": -90,
+            "y": 70,
+            "visible": false,
+            "analyzed": true,
+            "revelation": "Method",
+            "connection": [],
+            "previous": [
+                8,
+                10
+            ],
+            "insightOutcome":[
+            ],
+            "interactions": [
+            ],
+            "image": "content/evidence/item/drugtrafficking.png"
+        },
+        {
+            "num": 12,
+            "name": "Unlocked Data Drive",
+            "description": "Gerard Little's identification cuff was able to de-encrypt the data stored on the drive.",
+            "insight": "A number of sensitive documents confirming Gerard Little's illicit activities were stored inside the drive.",
+            "x": 30,
+            "y": 50,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                2,
+                6
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "terminal/12_unlocked.json"
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 10
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 9
+                },
+                {
+                    "type": "unlockClue",
+                    "target": {
+                        "array": 2,
+                        "clue": 0
+                    }
+                }
+            ],
+            "interactions": [
+            ],
+            "image": "content/evidence/item/drive.png"
+        },
+        
+        {
+            "num": 13,
+            "name": "Scene of the Murder",
+            "description": "A derelict factory the car the body was discovered in had recently been located. Officers confirm suspicious conditions given the current investigation.",
+            "insight": "The investigation can proceed to the \"Derelict Factory\".",
+            "x": 10,
+            "y": -20,
+            "visible": false,
+            "analyzed": true,
+            "revelation": "Location",
+            "connection": [],
+            "previous": [
+                4,
+                5
+            ],
+            "insightOutcome":[
+            ],
+            "interactions": [
+            ],
+            "image": "content/evidence/item/sceneofthecrime.png"
+        }
+    ]
+}

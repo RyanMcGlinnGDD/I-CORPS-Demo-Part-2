@@ -1,0 +1,188 @@
+#boardUILayer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: transparent;
+    pointer-events: none;
+    
+    font-family: "Lato", Helvetica, sans-serif;
+}
+
+#visualFrame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    outline: 4vh solid #B16116;
+    outline-offset: -3vh;
+    margin: 0;
+}
+#visualFrameInner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    outline: 2vh solid #BF7318;
+    outline-offset: -3vh;
+    margin: 0;
+    
+}
+
+#boardTitleFrame{
+    position: absolute;
+    bottom: 2vh;
+    
+    transform: translate(-50%, 0);
+    left: 50%;
+    
+    background-color: #A2A2A2;
+}
+#boardTitleInnerFrame{
+    height: 6vmin;
+    line-height: 6vmin;
+    font-size: 0;
+    margin: 1.5vmin;
+    background-color: white;
+    white-space: nowrap;
+    pointer-events: auto;
+    cursor: pointer;
+    color: green;
+    
+}
+#boardTitleText{
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 2vmin;
+    font-family: "Architects Daughter", Helvetica, sans-serif;
+    font-size: 4vmin;
+    line-height: 6vmin;
+    height: 6vmin;
+    color: black;
+    vertical-align: top;
+}
+#boardTitleDivider{
+    display: inline-block;
+    width: 2vmin;
+    height: 6vmin;
+    background-color: #696969;
+}
+#boardTitleSelector{
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 4vmin;
+    line-height: 6vmin;
+    height: 6vmin;
+    width: 6vmin;
+    text-align: center;
+    font-weight: 900;
+    vertical-align: top;
+}
+#boardTitleInnerFrame:hover{
+    background-color: lightgray;
+    color: lawngreen;
+}
+
+#boardTitleFrameTopLeft{
+    position: absolute;
+    width: 1.5vmin;
+    height: 1.5vmin;
+    background-color: #696969;
+    top: 0;
+    left: 0;
+}
+#boardTitleFrameTopRight{
+    position: absolute;
+    width: 1.5vmin;
+    height: 1.5vmin;
+    background-color: #696969;
+    top: 0;
+    right: 0;
+}
+#boardTitleFrameBottomLeft{
+    position: absolute;
+    width: 1.5vmin;
+    height: 1.5vmin;
+    background-color: #696969;
+    bottom: 0;
+    left: 0;
+}
+#boardTitleFrameBottomRight{
+    position: absolute;
+    width: 1.5vmin;
+    height: 1.5vmin;
+    background-color: #696969;
+    bottom: 0;
+    right: 0;
+}
+
+#solveFrame{
+    font-family: 'PT Mono', monospace;
+    position: absolute;
+    right: 2vh;
+    bottom: 2vh;
+    pointer-events: all;
+}
+#revelationFrame, #mysteryFrame{
+    background-color: lightgray;
+    outline: .2vmin solid white;
+    overflow: hidden;
+    box-sizing: border-box;
+    float: right;
+}
+#revelationFrame{
+    padding: .5vmin;
+    font-size: 1.5vw;
+    margin-bottom: 1vmin;
+}
+#mysteryFrame{
+    clear:both;
+    padding: 1vmin;
+    font-size: 2.2vw;
+}
+#revelationFrame:hover, #mysteryFrame:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+#timeRemainingFrame, #selectTimeRemainingFrame{
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    width: 12vmin;
+    height: 13.25vmin;
+    text-align: center;
+    font-family: "Lato", Helvetica, sans-serif;
+    overflow: hidden;
+}
+#timeRemainingText, #selectTimeRemainingText{
+    position: absolute;
+    top: 0;
+    width: 12vmin;
+    height: 9vmin;
+    line-height: 8vmin;
+    font-size: 8vmin;
+    background-color: white;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: .2vmin;
+}
+#timeRemainingLabel, #selectTimeRemainingLabel{
+    position: absolute;
+    bottom: 0;
+    width: 10vmin;
+    height: 10min;
+    padding-bottom: .25vmin;
+    font-size: 2vmin;
+    background-color: white;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: .2vmin;
+}

@@ -1,0 +1,111 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        },
+        {
+            "name": "Nole"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "workstation.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/drive.png"
+        },
+        {
+            "prop": "content/evidence/item/ftphone.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Let's take a closer look at the drive attached to this computer.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "There seems to be a security protocol preventing us from accessing the files. Anything you can tell us about this Nole?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "From what I can tell, Gerard locked the files and tied the ability to access them to an authentication lock tied to his own biometric data.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Would you be able to trigger an override?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Unfortunately no, without Gerard's key it will be impossible to de-encrypt.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Any idea what kind of item the key itself is?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Based on the context, I would assume that it is something that would contain his biometric data.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "We'll have to keep an eye out for anything like that.",
+            "action": [
+            ]
+        }
+	]
+}

@@ -1,0 +1,104 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        },
+        {
+            "name": "Nole"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "workstation.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/tamperedcars.png"
+        },
+        {
+            "prop": "content/evidence/item/ftphone.png"
+        },
+        {
+            "prop": "content/evidence/item/shipment.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "All the pices fit together.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Tampered Future*Tech cars were being used as mobile storage for the goods dealt through Esposito's operation.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 0
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "They were able to smuggle a massive amount of goods into the city.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 2
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "With such a huge supply, they were able to corner the market and become the biggest distributors in the city, providing to every other crime family.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "I can't believe they were using our systems against the law.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Mark my words, Esposito will regret thinking that he could get away with taking advantage of Future*Tech.",
+            "action": [
+            ]
+        }
+	]
+}

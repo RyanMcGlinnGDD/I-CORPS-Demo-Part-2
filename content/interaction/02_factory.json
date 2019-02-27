@@ -1,0 +1,264 @@
+{
+    "boardName": "Derelict factory",
+    "openingActions":[
+        {
+            "type": "dialogue",
+            "target": "factory/opener.json"
+        },
+        {
+            "type": "unlockEvidence",
+            "target": 0
+        },
+        {
+            "type": "unlockEvidence",
+            "target": 1
+        },
+        {
+            "type": "unlockEvidence",
+            "target": 2
+        }
+    ],
+    "evidence":[
+        {
+            "num": 0,
+            "name": "Land Ownership Records",
+            "description": "Public documentation detailing the sales history of the deed to the derelict factory.",
+            "insight": "It seems Esposito purchased this abandoned factory among other plots of low value land years ago.",
+            "x": -70,
+            "y": -60,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "factory/00_property.json"
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 3
+                }
+            ],
+            "interactions": [
+            ],
+            "image": "content/evidence/item/document.png"
+        },
+        {
+            "num": 1,
+            "name": "Autopsy",
+            "description": "The completed autopsy for the recovered body of Gerard Little",
+            "insight": "Contains DNA samples and explains that the death of the victim was caused by fatal bleeding as the result of blunt force trauma injuries.",
+            "x": 0,
+            "y": -70,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "factory/01_autopsy.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 2,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "factory/connect_01-02.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 4
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/folder1.png"
+        },
+        {
+            "num": 2,
+            "name": "Industrial Debris",
+            "description": "A jumble of metal scrap and rusted tools are strewn accross the floor nearby.",
+            "insight": "A large wrench fished from the clutter is covered in fresh bloodstains.",
+            "x": 90,
+            "y": 10,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "factory/02_toolbox.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 1,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "factory/connect_01-02.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 4
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/toolbox.png"
+        },
+        {
+            "num": 3,
+            "name": "Esposito's Casefile",
+            "description": "A file from the precinct detailing Esposito's criminal activities, or at least the ones he was caught for.",
+            "insight": "Contains records for a bevy of small-time crimes as well as fingerprint records.",
+            "x": -90,
+            "y": 30,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                0
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "factory/03_casefile.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 4,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "factory/connect_03-04.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 5
+                        },
+                        {
+                            "type": "unlockClue",
+                            "target": {
+                                "array": 1,
+                                "clue": 1
+                            }
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/folder2.png"
+        },
+        {
+            "num": 4,
+            "name": "Bloody Wrench",
+            "description": "This was definitely used in the murder of Gerard Little, but it is unknown who struck the killing blow.",
+            "insight": "Bloody fingerprints cover the length of the handle.",
+            "x": 50,
+            "y": 70,
+            "visible": false,
+            "analyzed": false,
+            "revelation": 0,
+            "connection": [],
+            "previous": [
+                1,
+                2
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "factory/04_wrench.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 3,
+                    "result": [
+                        {
+                            "type": "spendTime",
+                            "target": {
+                                "cost": 1,
+                                "notification": ""
+                            }
+                        },
+                        {
+                            "type": "dialogue",
+                            "target": "factory/connect_03-04.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 5
+                        },
+                        {
+                            "type": "unlockClue",
+                            "target": {
+                                "array": 1,
+                                "clue": 1
+                            }
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/item/wrench.png"
+        },
+        {
+            "num": 5,
+            "name": "Murder Weapon",
+            "description": "The bloody fingerprints on the handle belong to none other than Esposito.",
+            "insight": "This is an important method to consider for solving this case overall.",
+            "x": -40,
+            "y": 80,
+            "visible": false,
+            "analyzed": true,
+            "revelation": "Method",
+            "connection": [],
+            "previous": [
+                3,
+                4
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "factory/05_weapon.json"
+                }
+            ],
+            "interactions": [
+            ],
+            "image": "content/evidence/item/murder.png"
+        }
+    ]
+}

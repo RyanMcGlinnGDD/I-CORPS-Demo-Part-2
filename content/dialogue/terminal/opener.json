@@ -1,0 +1,618 @@
+{
+    "location": "Police Department",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        },
+        {
+            "name": "Viola"
+        },
+        {
+            "name": "Nole"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "policedepartment.jpg"
+        },
+        {
+            "backdrop": "carfacility.jpg"
+        },
+        {
+            "backdrop": "workstation.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/character/freddie.png"
+        },
+        {
+            "prop": "content/evidence/character/esposito.png"
+        },
+        {
+            "prop": "content/evidence/character/gerard.png"
+        },
+        {
+            "prop": "content/evidence/item/tamperedcars.png"
+        },
+        {
+            "prop": "content/evidence/item/ftphone.png"
+        },
+        {
+            "prop": "content/evidence/item/car.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Detective Stone, Agent Pryce, glad to have the two of you here. I'll give you a brief update on the Esposito case.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": -60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 0,
+                    "active": true,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "We interviewed Freddie Silva after you cracked the last case, and we learned a lot.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 0
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Adrian Esposito, a recognized crime lord and underworld kingpin, has always managed to act with discretion and stay just clean enough to stay under the radar.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "According to Freddie, he has somehow managed to create a massive drug-running network right under our noses, and we didn't have a clue.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "It seems that he's been carefully using a system of proxies to minimize information leakage, and we have no solid evidence against him.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "I'm assigning the ICORPS unit to investigate this operation and dig up solid evidence as to how it works and who the key players are.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Did Freddie give us any more to go off of? We're going to need a lead to start the investigation.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Again, due to the nature of the operation's proxy system, Freddie was only able to give us one name. Gerard Little.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Gerard Little is a technician working for the Future*Tech company right here in San Francisco.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 2
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "He's stationed at one of the terminals where the Future*Tech autonomous vehicle fleet is maintained.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Oh, the self-driving vehicle network? I actually rode one of those cars into the city from the airport.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 3
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I didn't realize that it was maintained by a single company.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Yeah actually. Future*Tech has been using the city as a test bed for their innovations for quite some time now.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "The autononmous vehicle fleet has been a crowning achievement of theirs.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "It's definitely made the commute a lot easier. I certainly don't miss getting aggravated over congested traffic.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Ah yes, in regards to Future*Tech, they've agreed to assist us with the investigation. Here, take this phone.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "Hello investigators, this is Nole Walker speaking. I'll be lending a hand in getting to the bottom of this affair.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 4
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Wait, Nole Walker? THE Nole Walker?",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 4,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": -60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 0,
+                    "active": true,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Do you know who this is?",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 4,
+                    "active": true,
+                    "position": -60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 0,
+                    "active": true,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Nole Walker is the CEO and founder of Future*Tech. He's a bit of a local legend.",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": -60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 0,
+                    "active": true,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Is there any particlar reason for your direct involvement as the contact for this investigation?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "Haha yes, when this came to my attention I felt that it was so important that I had to see to it personally.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "Just use this phone to reach me at any point of the investigation and I should be able to fill you in should you have any questions about Future*Tech and our technologies.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "Good luck.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "...",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Ah yes, one more important thing.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Esposito has shown himself to be adept at avoiding incrimination in the past.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "We are concerned that he is a flight risk and that he may try to escape our grasp should he catch wind of our doings prematurely.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "We have taken him in for questioning for an unrelated charge but can only hold him here for so long.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Complete the investigation swiftly, this is our best chance of putting him away for good.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Head out to the Future*Tech maintenance terminal immediately.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Yes comissioner.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Will do.",
+            "action": [
+            ]
+        },
+        {
+            "type": "transition",
+            "scene": 1,
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": "Maintenance Terminal"
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Wow, look at all these cars.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 0,
+                    "active": false,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Wow is right, I've never been inside one of these before.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Nole, where will Gerard Little be located in this facility?",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 4
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "While things like electrical charging and simple maintenance can be conducted without human assistance, technicians have their own workstations where more complex repairs can be made.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "I have marked Gerard Little's personal workstation on this phone's GPS. Follow the indicators, it should only be a few minutes of walking.",
+            "action": [
+            ]
+        },
+        {
+            "type": "transition",
+            "scene": 2,
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": "Gerard Little's Workstation"
+                },
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Ah, this must be it.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 6,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I see cars but there's no sign of the suspect.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "I found a computer over here as well. It's locked though.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "Technicians use these computers to process diagnostics for the cars that come in.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 4
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "Let me unlock it remotely so that you can give a thorough examination.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Huh? Wait what's that?",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 5
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 6,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 6,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "A car just pulled up on its own. I don't see a driver.",
+            "action": [
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 3,
+            "statement": "It must have been sent here using its navigation system. It's a self-driving car after all.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 4
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "We'll see if it has anything to do with our investigation. Let's begin.",
+            "action": [
+            ]
+        }
+	]
+}

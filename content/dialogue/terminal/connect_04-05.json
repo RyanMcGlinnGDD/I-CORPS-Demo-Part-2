@@ -1,0 +1,121 @@
+{
+    "location": "",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "workstation.jpg"
+        },
+        {
+            "backdrop": "later.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/item/location.png"
+        },
+        {
+            "prop": "content/evidence/item/sceneofthecrime.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "If we assume that Gerard Little was killed recently somewhere else, we can reference the car's location data to look for clues.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 0
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Let's send some officers to check the recent places for signs of trouble.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "transition",
+            "scene": 1,
+            "action": [
+            ]
+        },
+        {
+            "type": "transition",
+            "scene": 0,
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": "Gerard Little's Workstation"
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "It looks like they managed to find something. The car made a stop at a derelict factory at the edge of town earlier, and officers on the scene report signs of a struggle.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "propAction",
+                    "target": 1
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -40
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": 40
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Alright, let's find out just what happened.",
+            "action": [
+            ]
+        }
+	]
+}

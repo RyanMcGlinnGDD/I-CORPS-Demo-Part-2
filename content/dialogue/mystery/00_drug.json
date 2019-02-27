@@ -1,0 +1,231 @@
+{
+    "location": "Police Department",
+    "actors":[
+        {
+            "name": "Dustin"
+        },
+        {
+            "name": "Silas"
+        },
+        {
+            "name": "Viola"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "policedepartment.jpg"
+        }
+    ],
+    "props":[
+        {
+            "prop": "content/evidence/character/gerard.png"
+        },
+        {
+            "prop": "content/evidence/item/tamperedcars.png"
+        },
+        {
+            "prop": "content/evidence/item/cryptocurrency.png"
+        },
+        {
+            "prop": "content/evidence/item/financial.png"
+        },
+        {
+            "prop": "content/evidence/item/shipment.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Let's break down what we know so far.",
+            "action": [
+                {
+                    "type": "locationMarker",
+                    "text": ""
+                },
+                {
+                    "type": "actorAction",
+                    "target": 0,
+                    "expression": 0,
+                    "active": true,
+                    "position": -20
+                },
+                {
+                    "type": "actorAction",
+                    "target": 1,
+                    "expression": 0,
+                    "active": true,
+                    "position": -60
+                },
+                {
+                    "type": "actorAction",
+                    "target": 2,
+                    "expression": 0,
+                    "active": true,
+                    "position": 50
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Esposito was in contact with a corrupt man-on-the-inside with a fair amount of control over Future*Tech's autonomous vehicle system. Gerard Little.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 0
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Gerard Little was able to use autnomous vehicles to store and transport illicit goods safely and inconspicuously.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "The Esposito operation was so successful at moving goods into the city in great quantity that they became something akin to a wholesale distributor to other crime families.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Lastly, transactions were dealt in digital currency.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 2
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Even if what we found was only a fraction of they were making, the amount of money is substantial.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "These are solid conclusions.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Taking these factors into account, we should be able to stop this operation in its tracks.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "However, we came to a realization after your preliminary investigation.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "What exactly did you find out?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "We put our forensics divison on the case and they found some inconsistencies.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "We cross referenced the financial transaction records, and the numbers don't all match up.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 3
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Not only that, when we did chemical analysis of the content of some of the bags, the concentrations were off.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": 4
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "Aha, I think I get it.",
+            "action": [
+                {
+                    "type": "propAction",
+                    "target": -1
+                }
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "Gerard Little was skimming from Esposito's profits, wasn't he?",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "That's what it looks like. Fudging the numbers and mixing placebo into the product allowed him to pocket the extra.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "statement": "I guess that explains why Freddie Silva was caught dealing powedered sugar.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "statement": "I'd imagine Esposito would not take kindly to this if he found out.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "Given the current circumstances, I would assume that he did in fact find out.",
+            "action": [
+            ]
+        },
+        {
+            "type": "dialogue",
+            "speaker": 2,
+            "statement": "In any case, keep this potential motive in mind and continue the investigation.",
+            "action": [
+            ]
+        }
+	]
+}

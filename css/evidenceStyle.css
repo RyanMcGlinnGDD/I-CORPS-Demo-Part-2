@@ -1,0 +1,176 @@
+#evidenceLayer{
+    transition: opacity .2s linear;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: transparent;
+    pointer-events: none;
+    
+    font-family: "Lato", Helvetica, sans-serif;
+}
+#evidenceFrame{
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    position: absolute;
+    pointer-events: auto;
+}
+#photoFrame{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#photoBorder{
+    background-color: white;
+    height: 36vh;
+    width: 32vh;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#photoImageBorder{
+    background-color: #272727;
+    height: 29vh;
+    width: 29vh;
+    position: absolute;
+    margin-top: 1.5vh;
+    top: 0;
+    margin-right: auto;
+    right: 0;
+    margin-left: auto;
+    left: 0;
+}
+#photoImage{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: sepia(30%) contrast(150%);
+}
+#photoFrameTitleFrame{
+    position: absolute;
+    bottom: 2.6vh;
+    text-align: center;
+    
+    width: 32vh;
+    margin: 0 auto;
+    transform: translate(0, 50%);
+}
+#photoFrameTitle{
+    font-family: "Architects Daughter", Helvetica, sans-serif;
+    font-size: 2.5vmin;
+    line-height: 1em;
+    margin-left: .5vh;
+    margin-right: .5vh;
+}
+#descriptionFrame{
+    height: 30vh;
+    width: 100%;
+}
+#descriptionFramePaper{
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    height: 28vh;
+    background-color: #B1DBB3;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: .2vh;
+    
+    overflow-y: auto;
+}
+#descriptionFrameTitle{
+    font-size: 3vmin;
+    margin-left: auto;
+    margin-top: 1vh;
+    margin-right: auto;
+    margin-bottom: .5vh;
+    text-align: center;
+}
+#descriptionFrameContent{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-size: 1.75vmin;
+}
+#analysisFrame{
+    height: 30vh;
+    width: 100%;
+}
+#analysisFramePaper{
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    height: 28vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: .2vh;
+    
+    overflow-y: auto;
+}
+.analysisFramePaperBlue{
+    background-color: #B5E5F9;
+}
+.analysisFramePaperRed{
+    background-color: #f9b4b4;
+}
+#analysisFrameTitle{
+    font-size: 3vmin;
+    margin-left: auto;
+    margin-top: 1vh;
+    margin-right: auto;
+    margin-bottom: .5vh;
+    text-align: center;
+}
+#analysisFrameContent{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-size: 1.75vmin;
+}
+#analysisButton{
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    height: 28vh;
+    background-color: lightgray;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-width: .2vh;
+    
+    text-align: center;
+    position: relative;
+}
+#analysisButton:hover{
+    background-color: gray;
+}
+#analysisButtonGraphic{
+    height: 26vh;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    cursor: pointer;
+}
+#analysisButtonText{
+    font-family: 'PT Mono', monospace;
+    font-size: 3vmin;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

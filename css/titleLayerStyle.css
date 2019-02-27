@@ -1,0 +1,93 @@
+#titleLayer, #creditLayer{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-family: "Lato", Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+}
+#titleLayerWrapper, #creditLayerWrapper{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+#titleLayerBackground, #creditLayerBackground{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+#creditLayerWrapper{
+    background-color: rgba(0,0,0,.5);
+}
+
+#titleLayerTitle{
+    height: 20vh;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 16vh;
+}
+
+#titleLayerSubtitle{
+    margin-top: 0;
+    margin-bottom: 12.5vh;
+    height: 10vh;
+    line-height: 10vh;
+    -webkit-text-stroke: .25vmin rgba(0,0,0,.7);
+    font-size: 8vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.titleLayerButton{
+    height: 10vh;
+    background-color: rgba(0,0,0,.85);
+    line-height: 10vh;
+    font-size: 5vh;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 4vh;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.titleLayerButton:hover{
+    background-color: rgba(0,0,0,1);
+}
+
+
+#creditLayer .title{
+    height: 10vh;
+    line-height: 10vh;
+    font-weight: bold;
+    font-size: 4vmin;
+}
+#creditLayerTitleDeveloper{
+    margin-top: 12.5vh;
+}
+#creditLayerTitleScenario{
+}
+#creditLayerDirect, #creditLayerScenario, #creditLayerScenarioCredit{
+    font-size: 2.5vmin;
+    width: 40%;
+    margin: 0 auto;
+    overflow-y:auto;
+}
+#creditLayerDirect{
+    height: 4vh;
+}
+#creditLayerScenario{
+    height: 8vh;
+}
+#creditLayerScenarioCredit{
+    height: 24vh;
+    margin-bottom: 2vh;
+    outline: .1vh solid white;
+}
